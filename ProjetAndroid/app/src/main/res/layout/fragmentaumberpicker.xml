@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="91dp"
+        android:layout_height="wrap_content"
+        android:text="Objet :"
+        android:id="@+id/textView0"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView1"
+        android:layout_marginTop="30dp" />
+
+
+    <Gallery xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/textView0"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:layout_width="91dp"
+        android:layout_height="wrap_content"
+        android:text="Couleur : "
+        android:id="@+id/textView1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="29dp"
+        android:layout_above="@+id/gallery2"
+        android:layout_alignStart="@+id/gallery"
+        android:layout_marginBottom="55dp" />
+
+    <TextView
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:text="Nombre d&apos;occurence : "
+        android:id="@+id/textView2"
+        android:layout_above="@+id/textView3"
+        android:layout_alignStart="@+id/textView1"
+        android:layout_marginBottom="64dp" />
+
+
+
+    <TextView
+        android:layout_width="91dp"
+        android:layout_height="wrap_content"
+        android:text="Vitesse :"
+        android:id="@+id/textView3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginBottom="46dp" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignStart="@+id/numberPicker"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/textView4"
+        android:layout_below="@+id/seekBar"
+        android:layout_alignStart="@+id/seekBar"
+        android:layout_alignEnd="@+id/seekBar" />
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="93dp"
+        android:id="@+id/numberPicker"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_above="@+id/seekBar"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_marginBottom="25dp" />
+
+    <Gallery xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gallery2"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/gallery" />
+
+
+</RelativeLayout>
