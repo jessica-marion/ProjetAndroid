@@ -21,12 +21,12 @@
     </option>
     <option name="PROXY_SETTINGS">
       <value>
-        <option name="USE_PROXY" value="false" />
-        <option name="PROXY_HOST" value="" />
+        <option name="USE_PROXY" value="true" />
+        <option name="PROXY_HOST" value="https://github.com/" />
         <option name="PROXY_PORT" value="8080" />
         <option name="TYPE" value="0" />
-        <option name="LOGIN" value="" />
-        <option name="PASSWORD" value="" />
+        <option name="LOGIN" value="jessica.rosso@laposte.net" />
+        <option name="PASSWORD" value="jessicamarion2613" />
       </value>
     </option>
     <option name="SSH_FOR_EXT_CONFIGURATION">
@@ -35,7 +35,7 @@
         <option name="PATH_TO_PPK" value="" />
       </value>
     </option>
-    <option name="PATH_TO_PASSWORD_FILE" />
+    <option name="PATH_TO_PASSWORD_FILE" value="$userdir/.cvspass" />
     <option name="TIMEOUT" value="10" />
     <option name="MAKE_CHECKED_OUT_FILES_READONLY" value="false" />
     <option name="CHECKOUT_PRUNE_EMPTY_DIRECTORIES" value="true" />
@@ -54,5 +54,9 @@
     <option name="CHECKOUT_AFTER_IMPORT" value="true" />
     <option name="KEYWORD_SUBSTITUTION_WRAPPERS" value="" />
     <option name="MAKE_NEW_FILES_READ_ONLY" value="false" />
+  </component>
+  <component name="SSHPasswordProvider">
+    <passwords />
+    <ppkpasswords />
   </component>
 </application>
