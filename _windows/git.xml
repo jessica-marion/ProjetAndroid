@@ -1,6 +1,6 @@
 <application>
   <component name="Git.Application.Settings">
-    <option name="myPathToGit" value="F:\TD_4" />
+    <option name="myPathToGit" value="F:\TD_4\app\.gitignore" />
     <option name="SSH_EXECUTABLE" value="IDEA_SSH" />
   </component>
 </application>
