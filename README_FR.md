@@ -1,3 +1,5 @@
+
+![alt tag](https://github.com/jessica-marion/ProjetAndroid/blob/master/logo_projet_android.png)
 Pied Piper
 ==
 Ce projet est un jeu pour smartphone Android.
