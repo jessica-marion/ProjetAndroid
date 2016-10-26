@@ -16,8 +16,8 @@ Si vous avez certains retours à nous faire, n'hésitez pas à nous contacter à
 <A HREF="jessica.rosso@etu.unice.fr">jessica.rosso@etu.unice.fr</A>
 
  
-[Source Son](http://www.sound-fishing.net/bruitages_bruitages-debiles.html)
-[Source Icons](http://www.flaticon.com/)
+[Source Son](http://www.sound-fishing.net/bruitages_bruitages-debiles.html)<br/>
+[Source Icons](http://www.flaticon.com/)<br/>
 
 Qu’est ce qui est innovant ?
 -
