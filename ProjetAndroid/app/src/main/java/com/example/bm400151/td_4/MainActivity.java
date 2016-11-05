@@ -1,11 +1,17 @@
 package com.example.bm400151.td_4;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import android.app.ActionBar;
 import android.support.v4.view.ViewPager;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements NumberPickerFragment.OnActionListener  {
 
@@ -49,6 +55,53 @@ public class MainActivity extends AppCompatActivity implements NumberPickerFragm
                         .setTabListener(tabListener));
 
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+
+        if (id == R.id.action_quitter) {
+
+            Toast.makeText(this, "quitter", Toast.LENGTH_LONG).show();
+            finish();
+            return true;
+        }
+
+        if (id == R.id.action_reglement) {
+            Intent sendSms = new Intent(Intent.ACTION_SENDTO, Uri.parse("sms:0629768968"));
+            sendSms.putExtra("sms_boby","Mon premier sms");
+            startActivity(sendSms);
+            Intent intent = new Intent(this,regle.class);
+            this.startActivity(intent);
+            return true;
+        }
+
+        if (id == R.id.action_main) {
+            Intent intent = new Intent(this,MainActivity2.class);
+            this.startActivity(intent);
+            return true;
+        }
+        if (id == R.id.action_messageRetour) {
+            Intent intent = new Intent(this,sendMessage.class);
+            this.startActivity(intent);
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
 
     android.support.v7.app.ActionBar.TabListener tabListener = new android.support.v7.app.ActionBar.TabListener() {
         @Override

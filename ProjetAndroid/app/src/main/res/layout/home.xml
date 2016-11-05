@@ -2,43 +2,57 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/wallpaper_01">
-
-    <TextView
-        android:text="MJ"
-        android:layout_width="175dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView6"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="86dp"
-        android:layout_marginTop="54dp" />
-
-    <Button
-        android:text="  Jouer new"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView6"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="139dp"
-        android:id="@+id/button" />
+    android:layout_height="match_parent">
 
     <Button
         android:text="Reglement"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="27dp"
         android:id="@+id/button2"
-        android:layout_below="@+id/button"
-        android:layout_alignStart="@+id/button" />
+        android:layout_above="@+id/button3"
+        android:layout_alignEnd="@+id/button"
+        android:textColor="#3d8c13"/>
 
     <Button
         android:text="Quitter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="37dp"
         android:id="@+id/button3"
-        android:layout_below="@+id/button2"
-        android:layout_alignStart="@+id/button2" />
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="37dp"
+        android:layout_alignEnd="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:textColor="#3d8c13"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:background="@drawable/logo_projet_android"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Niveaux"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bouton1"
+        android:textAlignment="center"
+        android:width="105dp"
+        android:layout_above="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:textColor="#3d8c13"/>
+
+
+
+    <Button
+        android:text=" Jouer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:textAlignment="center"
+        android:width="105dp"
+        android:layout_above="@+id/bouton1"
+        android:layout_alignStart="@+id/bouton1"
+        android:textColor="#3d8c13"/>
 </RelativeLayout>

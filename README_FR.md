@@ -8,7 +8,7 @@ va choisir. <br/>
 Les parametres sont l'objet, la couleur, la vitesse et le nombre d'occurence.
 En fonction des paramètres les objets vont s'afficher et être en mouvement 
 correspondant à la vitesse choisie.<br/>
-Au bout de dix intrus trouvés, l'utilisateur change de niveau. 
+
 
 <br/>
 <br/>
@@ -17,6 +17,7 @@ Si vous avez certains retours à nous faire, n'hésitez pas à nous contacter à
 
  
 [Source Son](http://www.sound-fishing.net/bruitages_bruitages-debiles.html)<br/>
+[Source Fond](http://www.veryworldtrip.com/wp-content/uploads/2013/11/Dolomites-Alpes-italiennes-destinations-skier-hivers-montagne.png)<br/>
 [Source Icons](http://www.flaticon.com/)<br/>
 
 Qu’est ce qui est innovant ?
@@ -35,12 +36,12 @@ Maintenance (Mises à jour régulières)<br/>
 
 ### Dans le futur #
 -
-[] Choisir le niveau <br/>
+[x] Choisir le niveau <br/>
 [] Ajouter plus d'objets et de couleurs <br/>
 [] Ajouter un réglage pour le son et le vibreur <br/>
 [] Ajouter différents intrus <br/>
-[] Partager son score sur les réseaux socaux <br/>
-[] Donner des retours sur l'application dans un onglet du menu <br/>
+[x] Partager son score sur les réseaux sociaux <br/>
+[x] Donner des retours sur l'application dans un onglet du menu <br/>
 [] Traduction <br/>
 
 
@@ -88,3 +89,6 @@ Les critères et aides de notre enseignante : [critères et aides](http://machad
 <b>10 ième étape:</b> Mettre un intrus <br/>
 <b>11 ième étape:</b> Mettre en place une vibration quand on trouve un intrus <br/>
 <b>12 ième étape:</b> Mettre en place un son quand on trouve dix intrus <br/>
+<b>13 ième étape:</b> Modifier l'interface<br/>
+<b>14 ième étape:</b> Ajouter de niveaux<br/>
+<b>15 ième étape:</b> Ajouter un espace retour des utilisateurs <br/>

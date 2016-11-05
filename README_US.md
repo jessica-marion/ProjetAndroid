@@ -7,8 +7,7 @@ Which is to find an intruder among the parameters that the user differnets
 will choose. <br/>
 The parameters are the object, color, speed and number of occurrences.
 Depending on the settings objects will be displayed and moving
-corresponding to the selected speed.<br/>
-After ten found intruders, users exchange level. 
+corresponding to the selected speed.<br/> 
 
 <br/>
 <br/>
@@ -18,6 +17,9 @@ If you have some feedback to us, do not hesitate to contact us at Email Address:
 
  
 [Source Son](http://www.sound-fishing.net/bruitages_bruitages-debiles.html)<br/>
+
+[Source Background](http://www.veryworldtrip.com/wp-content/uploads/2013/11/Dolomites-Alpes-italiennes-destinations-skier-hivers-montagne.png)<br/>
+
 [Source Icons](http://www.flaticon.com/)<br/>
 
 What is innovative?
@@ -36,12 +38,12 @@ Maintenance (Regular updates) <br/>
 
 ### In the future#
 -
-[] Select the level <br/>
+[x] Select the level <br/>
 [] Add more objects and colors <br/>
 [] Add a setting for the sound and vibrate <br/>
 [] Add different intruders <br/>
-[] Sharing score on social networks<br/> 
-[] Give feedback on the application in a menu tab <br/>
+[x] Sharing score on social networks<br/> 
+[x] Give feedback on the application in a menu tab <br/>
 [] Translation <br/> 
 
 
@@ -81,8 +83,8 @@ The criteria and support of our teacher: [criteria and Aids](http://machada.fr/c
 ### Progress #
 -
 <b> Step 1: </b> Place the subject <br/>
-<b> 2nd step: </b> Create fragments <br/>
-<b> 3rd step: </b> Making a model of the implementation <br/>
+<b> 2 nd step: </b> Create fragments <br/>
+<b> 3 rd step: </b> Making a model of the implementation <br/>
 <b> 4 th step: </b> Add selection (object, color, number of occurrences, speed) <br/>
 <b> 5 th step: </b> Create View <br/>
 <b> 6 th step: </b> View Object selected <br/>
@@ -90,5 +92,8 @@ The criteria and support of our teacher: [criteria and Aids](http://machada.fr/c
 <b> 8 th step: </b> Feed move the object according to the selected color <br/>
 <b> 9 th step: </b> Display n times the object with the color (with n, the number of occurrences) <br/>
 <b> 10 th step: </b> Put an intruder <br/>
-<b> 11th step: </b> Set up a vibration when there is an intruder <br/>
+<b> 11 th step: </b> Set up a vibration when there is an intruder <br/>
 <b> 12 th step: </b> Set up a sound when there are ten intruders <br/>
+<b> 13th step: </b> Edit interface <br/>
+<b> 14th step: </b> Add levels <br/>
+<b> 15th step: </b> Add users return space <br/>

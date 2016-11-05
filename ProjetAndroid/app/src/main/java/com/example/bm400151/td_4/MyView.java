@@ -1,26 +1,23 @@
 package com.example.bm400151.td_4;
 
-import android.app.AlertDialog;
-import android.app.Dialog;
+
 import android.content.Context;
-import android.content.DialogInterface;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.media.MediaPlayer;
-import android.os.Bundle;
 import android.os.Vibrator;
 import android.util.AttributeSet;
 
 import android.view.MotionEvent;
 
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Random;
 
 
 public class MyView extends ImageView {
@@ -29,21 +26,23 @@ public class MyView extends ImageView {
     int y;
     int hb;
     int wb;
-    int resID;
+    static int resID;
     int dx = 1;
     int dy = 1;
     int nombreObjet = 1;
 
     int x1 = 0;
     int y1 = 0;
-    int x2 = 100;
-    int y2 = 50;
-    int x3 = 300;
+    int x2 = 300;
+    int y2 = 300;
+    int x3 = 500;
     int y3 = 90;
-    int x4 = 60;
-    int y4 = 100;
+    int x4 = 50;
+    int y4 = 50;
+
 
     int score = 0;
+    static int niveau = 1;
 
 
 
@@ -65,7 +64,6 @@ public class MyView extends ImageView {
     public void setDx(int uneVitesse){
         dx = uneVitesse;
     }
-
     public void setDy(int uneVitesse){
         dy = uneVitesse;
     }
@@ -74,6 +72,9 @@ public class MyView extends ImageView {
         nombreObjet = unNombreObjet;
     }
 
+    public static void setNiveau(int unNiveau){
+        niveau = unNiveau;
+    }
 
     Paint BackPaint = new Paint();
     Context MyContext;
@@ -104,11 +105,10 @@ public class MyView extends ImageView {
         y = 0;
         removeCallbacks(animator);
         post(animator);
-        resID = R.drawable.circle;
+
+        resID = R.drawable.cow;
 
     }
-
-
 
     public int getVitesse(int vitesse){
         return vitesse;
@@ -124,13 +124,11 @@ public class MyView extends ImageView {
         return resID;
     }
 
-    public int randomEntreDeuxValeurs(int min, int max) {
-        return min + (int)(Math.random() * ((max - min) + 1));
-    }
 
-    public void direction(){
 
-    }
+
+
+
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
@@ -153,19 +151,87 @@ public class MyView extends ImageView {
                 //Check if the x and y position of the touch is inside the bitmap
                 if( xe > x && xe < x + wb && ye > y && ye < y + hb )
                 {
-                    if (score == 11 ){
+                    if (score == 10 && niveau == 1 ){
                         MediaPlayer player= MediaPlayer.create(MyContext,R.raw.win);
-
+                        Toast.makeText(getContext(), "Vous avez débloqué le niveau 2", Toast.LENGTH_SHORT).show();
                         player.start();
+                        niveau = 1 + niveau;
                         score = 0;
 
                     }
+                    if (score == 20 && niveau == 2 ){
+                        MediaPlayer player= MediaPlayer.create(MyContext,R.raw.win);
+                        Toast.makeText(getContext(), "Vous avez débloqué le niveau 3", Toast.LENGTH_SHORT).show();
+                        player.start();
+                        niveau = 1 + niveau;
+                        score = 0;
+
+                    }
+                    if (score == 30 && niveau ==  3){
+                        MediaPlayer player= MediaPlayer.create(MyContext,R.raw.win);
+                        Toast.makeText(getContext(), "Vous avez débloqué le niveau 4", Toast.LENGTH_SHORT).show();
+                        player.start();
+                        niveau = 1 + niveau;
+                        score = 0;
+
+                    }
+                    if (score == 40 && niveau ==  4){
+                        MediaPlayer player= MediaPlayer.create(MyContext,R.raw.win);
+                        Toast.makeText(getContext(), "Vous avez débloqué le niveau 5", Toast.LENGTH_SHORT).show();
+                        player.start();
+                        niveau = 1 + niveau;
+                        score = 0;
+
+                    }
+                    if (score == 50 && niveau ==  5){
+                        MediaPlayer player= MediaPlayer.create(MyContext,R.raw.win);
+                        Toast.makeText(getContext(), "Vous avez débloqué le niveau 6", Toast.LENGTH_SHORT).show();
+                        player.start();
+                        niveau = 1 + niveau;
+                        score = 0;
+
+                    }
+                    if (score == 60 && niveau ==  6){
+                        MediaPlayer player= MediaPlayer.create(MyContext,R.raw.win);
+                        Toast.makeText(getContext(), "Vous avez débloqué le niveau 7", Toast.LENGTH_SHORT).show();
+                        player.start();
+                        niveau = 1 + niveau;
+                        score = 0;
+
+                    }
+                    if (score == 70 && niveau ==  7){
+                        MediaPlayer player= MediaPlayer.create(MyContext,R.raw.win);
+                        Toast.makeText(getContext(), "Vous avez débloqué le niveau 8", Toast.LENGTH_SHORT).show();
+                        player.start();
+                        niveau = 1 + niveau;
+                        score = 0;
+
+                    }
+                    if (score == 80 && niveau ==  8){
+                        MediaPlayer player= MediaPlayer.create(MyContext,R.raw.win);
+                        Toast.makeText(getContext(), "Vous avez débloqué le niveau 9", Toast.LENGTH_SHORT).show();
+                        player.start();
+                        niveau = 1 + niveau;
+                        score = 0;
+
+                    }
+                    if (score == 90 && niveau ==  9){
+                        MediaPlayer player= MediaPlayer.create(MyContext,R.raw.win);
+                        Toast.makeText(getContext(), "Vous avez débloqué le niveau 10, vous avez terminé le jeu", Toast.LENGTH_SHORT).show();
+                        player.start();
+                        niveau = 1 + niveau;
+                        score = 0;
+                    }
                     else {
                         Toast.makeText(getContext(), "Gagné ..." + score, Toast.LENGTH_SHORT).show();
-                        // Get instance of Vibrator from current Context
                         Vibrator v = (Vibrator) MyContext.getSystemService(Context.VIBRATOR_SERVICE);
+                        int[] image = new int[]{ R.drawable.tree,R.drawable.tree_brown,R.drawable.tree_green, R.drawable.tree_grey,R.drawable.tree_bleu,R.drawable.tree_blanc,
+                                R.drawable.squirrel,R.drawable.squirrel_brown,R.drawable.squirrel_green, R.drawable.squirrel_grey,R.drawable.squirrel_blue ,R.drawable.squirrel_white,
+                        R.drawable.flake,R.drawable.flake_brown,R.drawable.flake_green, R.drawable.flake_grey,R.drawable.flake_blue ,R.drawable.flake_white,
+                                R.drawable.cow,R.drawable.cow_brown,R.drawable.cow_green, R.drawable.cow_grey,R.drawable.cow_blue ,R.drawable.cow_white};
 
-
+                    int nextInt = new Random().nextInt(20);
+                        resID = image[nextInt];
                         v.vibrate(1000);
                         score = score + 1;
 
@@ -213,25 +279,15 @@ public class MyView extends ImageView {
             canvas.drawBitmap(myBitmap, x3, y3, null);
             canvas.drawBitmap(myBitmap, x4, y4, null);
         }
-        /*canvas.drawBitmap(myBitmap, x, y, null);
-        canvas.drawBitmap(myBitmap, x1, y1, null);*/
-
-    /*
-        for(i = 0; i<nombreObjet; i++) {
-
-            //canvas.drawBitmap(myBitmap, x = randomEntreDeuxValeurs(0, getWidth()), y = randomEntreDeuxValeurs(0, getHeight()), null);
-        }*/
-    };
+    }
 
     private Runnable animator = new Runnable() {
         @Override
         public void run() {
-            //long now = AnimationUtils.currentAnimationTimeMillis();
             update(); // permet de deplacer les objets
             invalidate();
-            //if(!isAtRest()) { //isAtRest  != coordonnées ont atteintes la destination finale ou !=temps de l'animation
             postDelayed(this, 14);
-            //}
+
         }
     };
 
@@ -326,26 +382,13 @@ public class MyView extends ImageView {
             x4 += dx;
             y4 += dy;
 
-        }/*
-        if(collisionx()){
-            dx *=-1;
         }
-        if(collisiony()) {
-            dy *= -1;
-        }
-        x += dx;
-        y += dy;*/
     }
 
 
 
 
 
-
-    /*private boolean isAtRest(){
-        if(x<getWidth()-hb && y<getHeight()-wb) return false;
-        else return true;
-    }*/
-};
+}
 
 

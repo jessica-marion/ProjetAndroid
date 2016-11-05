@@ -22,7 +22,6 @@ public class NumberPickerFragment extends Fragment {
 
     int imagePosition;
     int colorPosition;
-    int vitesse;
 
     public NumberPickerFragment() { }
 
@@ -164,7 +163,7 @@ class ImageAdapter extends BaseAdapter {
     private Context mContext;
     // tous les éléments de ImageAdapter
 // les références vers les ressources d’images
-    private Integer[] mImageIds = {R.drawable.circle, R.drawable.diamond, R.drawable.heart, R.drawable.triangle};
+    private Integer[] mImageIds = {R.drawable.cow, R.drawable.tree, R.drawable.squirrel, R.drawable.flake};
     public ImageAdapter(Context c) {
 // le contexte correspond à l’Ativity en cours d’exécution
 // ici c’est GalleryAndroidActivity
@@ -204,7 +203,7 @@ class ColorAdapter extends BaseAdapter {
     private Context mContext;
     // tous les éléments de ImageAdapter
 // les références vers les ressources d’images
-    private Integer[] mImageIds = {R.drawable.paint_red, R.drawable.paint_yellow, R.drawable.paint_green, R.drawable.paint_blue, R.drawable.paint_purple};
+    private Integer[] mImageIds = {R.drawable.blue, R.drawable.green, R.drawable.white, R.drawable.brown,R.drawable.grey};
     public ColorAdapter(Context c) {
 // le contexte correspond à l’Ativity en cours d’exécution
 // ici c’est GalleryAndroidActivity

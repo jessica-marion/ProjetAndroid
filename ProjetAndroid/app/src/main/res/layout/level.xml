@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:text="Retour"
+        android:layout_width="wrap_content"
+        android:layout_gravity="right"
+        android:layout_height="wrap_content"
+        android:id="@+id/button58"
+        android:textColor="#3d8c13"/>
+
+    <Button
+        android:text="Niveau 1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button24"
+        android:textColor="#3d8c13"/>
+
+    <Button
+        android:text="Niveau 2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button25"
+        android:textColor="#3d8c13"/>
+
+    <Button
+        android:text="Niveau 3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button26"
+        android:textColor="#3d8c13"/>
+
+    <Button
+        android:text="Niveau 4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button27"
+        android:textColor="#3d8c13"/>
+
+    <Button
+        android:text="Niveau 5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button52"
+        android:textColor="#3d8c13"/>
+
+    <Button
+        android:text="Niveau 6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button53"
+        android:textColor="#3d8c13"/>
+
+    <Button
+        android:text="Niveau 4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button54"
+        android:textColor="#3d8c13"/>
+
+    <Button
+        android:text="Niveau 8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button55"
+        android:textColor="#3d8c13"/>
+
+    <Button
+        android:text="Niveau 9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button56"
+        android:textColor="#3d8c13"/>
+
+    <Button
+        android:text="Niveau 10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button57"
+        android:textColor="#3d8c13"/>
+
+</LinearLayout>

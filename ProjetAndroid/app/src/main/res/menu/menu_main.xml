@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.bm400151.tee.MainActivity">
+    <item
+        android:id="@+id/action_main"
+        android:orderInCategory="100"
+        android:title="@string/action_main"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_reglement"
+        android:orderInCategory="100"
+        android:title="@string/action_reglement"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_messageRetour"
+        android:orderInCategory="100"
+        android:title="Votre retour"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_quitter"
+        android:orderInCategory="100"
+        android:title="@string/action_quitter"
+        app:showAsAction="never" />
+
+
+
+
+</menu>
