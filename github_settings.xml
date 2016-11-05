@@ -1,7 +1,0 @@
-<application>
-  <component name="GithubSettings">
-    <option name="LOGIN" value="jessica.rosso@laposte.net" />
-    <option name="HOST" value="https://github.com/jessica-marion/test.git" />
-    <option name="AUTH_TYPE" value="BASIC" />
-  </component>
-</application>
