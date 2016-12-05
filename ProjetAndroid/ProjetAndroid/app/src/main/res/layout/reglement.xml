@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jouer"
+        android:id="@+id/button5"
+        android:layout_gravity="right"
+        android:layout_below="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6"
+        android:layout_marginTop="43dp"
+        android:textColor="#3d8c13"/>
+
+    <TextView
+        android:text="Ce projet est un jeu pour smartphone Android. Qui consiste a trouver un intrus parmis les differnets parametres que l'utilisateur va choisir. "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button4"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginTop="71dp"
+        android:id="@+id/textView"
+        android:layout_alignEnd="@+id/textView6"
+        android:textSize="48px"/>
+
+    <TextView
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:text="Les parametres sont l'objet, la couleur, la vitesse et le nombre d'occurence. En fonction des paramètres les objets vont s'afficher et être en mouvement correspondant à la vitesse choisie."
+        android:id="@+id/textView6"
+        android:layout_weight="0.57"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="48px"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retour"
+        android:id="@+id/button4"
+        android:layout_gravity="right"
+        android:textColor="#3d8c13"
+        android:layout_marginTop="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/textView" />
+
+</RelativeLayout>
